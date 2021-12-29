@@ -1,17 +1,17 @@
-# Play-Store-App-Review-Analysis
+# PLAY-STORE-APP-REVIEW-ANALYSIS
 
-# INTRODUCTION
+## INTRODUCTION
 
 Application distribution platform, for example, Play Store gets overwhelmed with millions of new applications being launched on the platform regularly. Lots of designers and developers work on it to make an app successful on the Play Store. In this highly competitive world, it is an immense challenge for a developer to know whether they are focusing on the right path to make their app successful on the platform.
 To launch themselves successfully and create an identity for themselves in this oversaturated market, they need to ensure that majority of the essential factors are incorporated while designing and developing an app that would play an important role in customer's decision-making process. However, the lack of a clear understanding of the inner working and dynamic of popular app markets impacts both the developers and users.
 
-# OBJECTIVE
+## OBJECTIVE
 
 The main objective of this exploratory data analysis project is to understand customer demands better and thus help developers to popularize their product on the Play Store.
 One day on the evening of 8th August 2021, AlmaBetter plans to debut into the Android application by developing a mobile application on the play store platoform. They approaced us "Data Diggers" to help with building their technical know how about building a good android application. They wanted us to study current trends and insights of Play Store.
 We were given with two datasets i.e., Play Store & User Reviews. Before jumping into the data's provided, let me first explain you about the EDA analysis.
 
-# PROBLEM STATEMENTS
+## PROBLEM STATEMENTS
 
 1. What are the top categories on Play Store?
 2. Are majority of the apps Paid or Free?
@@ -27,12 +27,12 @@ We were given with two datasets i.e., Play Store & User Reviews. Before jumping 
 12. What is the percentage of review sentiments?
 13. How is sentiment polarity varying for paid and free apps?
 
-# What is Exploratory Data Analysis?
+## What is Exploratory Data Analysis?
 
 Exploratory data analysis (EDA) is used by data scientists to analyze and investigate data sets for patterns, and anomalies (outliers), and form hypotheses based on our understanding of the dataset and summarize their main characteristics, often employing data visualization methods. It is an important step in any Data Analysis or Data Science project. It helps determine how best to manipulate data sources to get the answers you need.
 EDA involves generating summary statistics for numerical data in the dataset and creating various graphical representations to understand the data better and make it more attractive and appealing.
 
-# The following are the various steps involved in the EDA process:
+## The following are the various steps involved in the EDA process:
 
 1. Problem Statement - We shall brainstorm and understand the given data set. We shall study the attributes present in it and try to do a philosophical analysis about their        meaning and importance for this problem.
 2. Hypothesis - Upon studying the attributes present in the data base, we shall develop some basic hypothesis on which we can work and play with the data to look for the varied    results which we can get out of it.
@@ -42,7 +42,7 @@ EDA involves generating summary statistics for numerical data in the dataset and
 6. Data Cleaning - We shall clean the dataset and handle the missing data, outliers and categorical variables.
 7. Testing Hypothesis - We shall check if our data meets the assumptions required by most of the multivariate techniques.
 
-# DATA EXPLORATION, CLEANING AND INSIGHTS
+## DATA EXPLORATION, CLEANING AND INSIGHTS
 
 play_store dataframe has 10841 rows and 13 columns. The 13 columns are identified as below:
 
@@ -68,7 +68,7 @@ user_reviews dataframe has 64295 rows and 5 columns. The 5 columns are identifie
 4. Sentiment_Polarity - Sentiment polarity for an element defines the orientation of the expressed sentiment, i.e., it determines if the text expresses the positive, negative or    neutral sentiment of the user about the application.
 5. Sentiment_Subjectivity - It refers to the text that contains text which is usually expressed by a human having typical moods, emotions, and feelings. Mostly it is a public      opinion and not a factual information.
 
-# Data Cleaning - Univariate & Bivariate Analysis
+## Data Cleaning - Univariate & Bivariate Analysis
 
 The number of null values in User-review dataframe are:
 
@@ -88,7 +88,7 @@ The number of null values in play_store dataframe are:
 4. Current_Ver has 8 null values which contributes 0.07% of the data.
 5. Android_Ver has 3 null values which contributes 0.03% of the data.
 
-OUR HYPOTHESIS:
+## OUR HYPOTHESIS:
 
 Hypothesis_1: 
 
@@ -110,7 +110,7 @@ we found that even with this hypothesis we dont get information needed to fill N
 
 Note2: Since both Hypothesis did not get us the information about Filling NaN values of Rating. We shall proceed with dropping these from the play_store DF.
 
-# Data Cleaning – Univariate Analysis (Play Store Data Set)
+## Data Cleaning – Univariate Analysis (Play Store Data Set)
 
 Findings
 • Reviews column was converted to a numeric type.
@@ -125,7 +125,7 @@ Findings
 • Current_Ver column refers to the latest version of the app and it had all relevant data in it, so it was retained. 8 null
 values were present, which were removed.
 
-# Data Cleaning – Univariate Analysis (User Reviews Data Set)
+## Data Cleaning – Univariate Analysis (User Reviews Data Set)
 Findings
 • 42% of the Translated_Review, Sentiment, Sentiment_Polarity & Sentiment_Subjectivity has null values and we had
   dropped all of these values, as they were of no value to the analysis.
@@ -144,7 +144,7 @@ Findings
 • A total of 1049 duplicates was found to be present in the play store data set.
 • We thus, then decided to drop these, as all the values in each column were repetitive in nature.
 
-# EDA INSIGHTS AND CONCLUSION: 
+## EDA INSIGHTS AND CONCLUSION: 
 
 • In this project of analyzing play store applications, we have worked on several parameters which
   would help AlmaBetter to do well in launching their apps on the play store.
